@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <title>Player</title>
+    <link rel="stylesheet" href="../index.css" />
+  </head>
+  <body>
+    <div class="rectangle">
+      <div class="playerInfo" id="playerInfo">
+        <div class="playerName" id="pseudo"></div>
+      </div>
+
+      <table class="infos">
+        <tbody>
+          <tr>
+            <th>ROI</th>
+            <td id="roi"></td>
+          </tr>
+          <tr>
+            <th>ROI Moyen</th>
+            <td id="roiMoyen"></td>
+          </tr>
+          <tr>
+            <th>ITM</th>
+            <td id="itm"></td>
+          </tr>
+          <tr>
+            <th>Profit</th>
+            <td id="profit"></td>
+          </tr>
+          <tr>
+            <th>Profit moyen</th>
+            <td id="profitMoyen"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script defer>
+      const params = new URLSearchParams(location.search);
+      document.getElementById("pseudo").innerHTML += params.get("pseudo");
+      document.getElementById("roi").innerHTML += params.get("roi");
+      document.getElementById("roiMoyen").innerHTML += params.get("roiMoyen");
+      document.getElementById("itm").innerHTML += params.get("itm");
+      document.getElementById("profit").innerHTML += params.get("profit");
+      document.getElementById("profitMoyen").innerHTML +=
+        params.get("profitMoyen");
+
+      if (params.get("type") === "whale") {
+        document.getElementById("playerInfo").innerHTML +=
+          '<div class="cercleRose"></div><div class="cercleRose"></div><div class="cercleRose"></div>';
+      } else if (params.get("type") === "clownfish") {
+        document.getElementById("playerInfo").innerHTML +=
+          '<div class="cercleRose">';
+      } else if (params.get("type") === "orque") {
+        document.getElementById("playerInfo").innerHTML +=
+          '<div class="cercleBleu"></div>';
+      } else {
+        document.getElementById("playerInfo").innerHTML +=
+          '<div class="cercleGris"></div>';
+      }
+    </script>
+  </body>
+</html>

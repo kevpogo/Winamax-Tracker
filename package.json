@@ -1,0 +1,21 @@
+{
+  "name": "tracker-winamax",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "rimraf dist && tsc && electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "21.2.2",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "axios": "0.27.2"
+  }
+}

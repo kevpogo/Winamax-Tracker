@@ -1,0 +1,67 @@
+body {
+    /*background-color: hsla(360, 100%, 50%, 0.2);*/
+    -webkit-app-region: drag;
+    margin: 0px;
+}
+
+.rectangle {
+    margin: 0px;
+    font-family: system-ui, serif;
+    background : rgba(97, 97, 97, 0.20);
+    border: 5px yellow;
+    line-height: 0.8em;
+    color: #d0d0d0;
+}
+
+.playerInfo {
+    display: flex;
+}
+
+.playerName {
+    font-size: 1em;
+}
+
+.infos {
+    font-size: 0.8em;
+    line-height: 0.6em;
+}
+
+.cercleRouge {
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    background: red;
+    margin-left: 5px;
+}
+
+.cercleRose {
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    background: #ff3659;
+    margin-left: 5px;
+}
+
+.cercleGris {
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    background: grey;
+    margin-left: 5px;
+}
+
+.cercleCyan {
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    background: cyan;
+    margin-left: 5px;
+}
+
+.cercleBleu {
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    background: blue;
+    margin-left: 5px;
+}
